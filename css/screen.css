@@ -1,0 +1,198 @@
+.hidden {
+  display: none; }
+
+.circle{
+  width:40px;
+  height:40px;
+  border-radius:20px;
+  background-color:black;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.circle:before {
+   content: "\25CF";
+   font-size: 30px;
+   cursor:pointer; 
+}
+
+.tooltip-container {
+  position: relative;
+  margin-top:425px;
+  margin-left: 450px;
+  cursor: default;
+}
+
+.tooltip {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: auto;
+  margin-left: -115px; }
+
+.north {
+  position: absolute;
+  top: auto;
+  bottom: 50px;
+  left: -65px; }
+  .north.tip:before {
+    position: absolute;
+    top: 100%;
+    left: 50%; }
+  .north.tip:after {
+    position: absolute;
+    top: 100%;
+    left: 50%; }
+
+.north-east {
+  position: absolute;
+  top: auto;
+  bottom: 50px;
+  left: 100px; }
+  .north-east.tip:before {
+    position: absolute;
+    top: 100%;
+    left: 35px; }
+  .north-east.tip:after {
+    position: absolute;
+    top: 100%;
+    left: 35px; }
+
+.east {
+  position: absolute;
+  top: -130px;
+  bottom: auto;
+  left: 165px; }
+  .east.tip:before {
+    left: auto;
+    right: 100%;
+    top: 50%;
+    border-top-color: transparent;
+    margin-top: -11px; }
+  .east.tip:after {
+    left: auto;
+    right: 100%;
+    top: 50%;
+    border-top-color: transparent;
+    margin-top: -10px; }
+
+.south-east {
+  position: absolute;
+  top: 50px;
+  bottom: auto;
+  left: 100px; }
+  .south-east.tip:before {
+    position: absolute;
+    top: -22px;
+    left: 35px; }
+  .south-east.tip:after {
+    position: absolute;
+    top: -20px;
+    left: 35px; }
+
+.south {
+  position: absolute;
+  top: 50px;
+  bottom: auto;
+  left: -65px; }
+  .south.tip:before {
+    position: absolute;
+    top: -22px;
+    left: 50%; }
+  .south.tip:after {
+    position: absolute;
+    top: -20px;
+    left: 50%; }
+
+.south-west {
+  position: absolute;
+  top: 50px;
+  bottom: auto;
+  left: -230px; }
+  .south-west.tip:before {
+    position: absolute;
+    top: -22px;
+    left: 365px; }
+  .south-west.tip:after {
+    position: absolute;
+    top: -20px;
+    left: 365px; }
+
+.west {
+  position: absolute;
+  top: -130px;
+  bottom: auto;
+  left: -295px }
+  .west.tip:before {
+    left: 100%;
+    top: 50%;
+    border-top-color: transparent;
+    margin-top: -11px;
+    margin-left: 0px; }
+  .west.tip:after {
+    left: 100%;
+    top: 50%;
+    border-top-color: transparent;
+    margin-top: -10px;
+    margin-left: 0px; }
+
+.north-west {
+  position: absolute;
+  top: auto;
+  bottom: 50px;
+  left: -230px; }
+  .north-west.tip:before {
+    position: absolute;
+    top: 100%;
+    left: 365px; }
+  .north-west.tip:after {
+    position: absolute;
+    top: 100%;
+    left: 365px; }
+
+.tip:before, .tip:after {
+  content: '';
+  position: absolute;
+  border: solid transparent;
+  pointer-events: none; }
+.tip:before {
+  border-width: 11px;
+  margin-left: -11px; }
+.tip:after {
+  border-width: 10px;
+  margin-left: -10px; }
+
+.tooltip {
+  background: white !important;
+  border: 1px solid black; }
+  .tooltip:before {
+    border-top-color: black; }
+  .tooltip:after {
+    border-top-color: white; }
+  .tooltip.south:before {
+    border-bottom-color: black;
+    border-top-color: transparent; }
+  .tooltip.south:after {
+    border-bottom-color: white;
+    border-top-color: transparent; }
+  .tooltip.south-east:before {
+    border-bottom-color: black;
+    border-top-color: transparent; }
+  .tooltip.south-east:after {
+    border-bottom-color: white;
+    border-top-color: transparent; }
+  .tooltip.south-west:before {
+    border-bottom-color: black;
+    border-top-color: transparent; }
+  .tooltip.south-west:after {
+    border-bottom-color: white;
+    border-top-color: transparent; }
+  .tooltip.west:before {
+    border-left-color: black; }
+  .tooltip.west:after {
+    border-left-color: white; }
+  .tooltip.east:before {
+    border-right-color: black; }
+  .tooltip.east:after {
+    border-right-color: white; }
+
